@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\Project2\\Project2.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\Project2\\Project2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\EntityFramework-Practice\\EntityFramework-Practice.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\EntityFramework-Practice\\EntityFramework-Practice.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\EntityFramework-Practice\\EntityFramework-Practice.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\EntityFramework-Practice\\EntityFramework-Practice.csproj",
         "projectName": "EntityFramework-Practice",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\EntityFramework-Practice\\EntityFramework-Practice.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\EntityFramework-Practice\\EntityFramework-Practice.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\EntityFramework-Practice\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\EntityFramework-Practice\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\Project2\\Project2.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\Project2\\Project2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\Project2\\Project2.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\Project2\\Project2.csproj",
         "projectName": "Project2",
-        "projectPath": "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\Project2\\Project2.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\Project2\\Project2.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\Project2\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\Project2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -99,8 +99,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\EntityFramework-Practice\\EntityFramework-Practice.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\Desktop\\EntityFramework-Practice\\EntityFramework-Practice\\EntityFramework-Practice.csproj"
+              "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\EntityFramework-Practice\\EntityFramework-Practice.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\EntityFrameworkPractice\\EntityFramework-Practice\\EntityFramework-Practice\\EntityFramework-Practice.csproj"
               }
             }
           }
@@ -114,6 +114,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

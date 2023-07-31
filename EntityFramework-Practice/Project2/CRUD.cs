@@ -241,6 +241,39 @@ namespace Project2
             // var projects = await context.Projects.Include(p => p.Employees).AsNoTrackingWithIdentityResolution().ToListAsync();
             #endregion
 
+            #region İlişkisel tablolara veri ekleme
+            /*Project project = new()
+            {
+                ProjectName = "Project A",
+                Employees = new HashSet<ProjectEmployee>()
+                {
+                    new()
+                    {
+                        Employee = new(){ EmployeeName = "Employee A"}
+                    },
+                }
+            };
+            await context.AddAsync(project);
+            await context.SaveChangesAsync();*/
+            #endregion
+
+            #region İlişkisel tablolarda güncelleme
+            /*
+            Project? project = await context.Projects.FindAsync(10);
+            Employee? employee = await context.Employees.FindAsync(1);
+            employee.Projects.Add(project);
+            await context.SaveChangesAsync();
+            */
+            #endregion
+
+            #region İlişkisel tablolarda silme
+            /*
+            Project? project = await context.Projects.FindAsync(10);
+            Employee? employee = await context.Employees.FindAsync(1);
+            employee.Projects.Remove(project);
+            await context.SaveChangesAsync();
+            */
+            #endregion
             Console.WriteLine();
         }
     }

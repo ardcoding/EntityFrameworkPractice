@@ -60,6 +60,50 @@ namespace EntityFramework_Practice.Migrations
 
                     b.ToTable("Projects");
                 });
+
+            modelBuilder.Entity("EntityFramework_Practice.Entities.ProjectEmployee", b =>
+                {
+                    b.Property<int>("ProjectId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProjectId", "EmployeeId");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("ProjectEmployee");
+                });
+
+            modelBuilder.Entity("EntityFramework_Practice.Entities.ProjectEmployee", b =>
+                {
+                    b.HasOne("EntityFramework_Practice.Entities.Employee", "Employee")
+                        .WithMany("Projects")
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("EntityFramework_Practice.Entities.Project", "Project")
+                        .WithMany("Employees")
+                        .HasForeignKey("ProjectId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+
+                    b.Navigation("Project");
+                });
+
+            modelBuilder.Entity("EntityFramework_Practice.Entities.Employee", b =>
+                {
+                    b.Navigation("Projects");
+                });
+
+            modelBuilder.Entity("EntityFramework_Practice.Entities.Project", b =>
+                {
+                    b.Navigation("Employees");
+                });
 #pragma warning restore 612, 618
         }
     }
